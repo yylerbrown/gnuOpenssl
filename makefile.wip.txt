@@ -19,69 +19,20 @@ MINOR=1.1
 
 SHLIB_VERSION_NUMBER=1.1
 
-LIBS=apps\libapps.lib libcrypto.lib libssl.lib test\libtestutil.lib
-SHLIBS=
-SHLIBPDBS=
-ENGINES=
-ENGINEPDBS=
-PROGRAMS=apps\openssl.exe fuzz\asn1-test.exe fuzz\asn1parse-test.exe fuzz\bignum-test.exe fuzz\bndiv-test.exe fuzz\client-test.exe fuzz\cms-test.exe fuzz\conf-test.exe fuzz\crl-test.exe fuzz\ct-test.exe fuzz\server-test.exe fuzz\x509-test.exe test\aborttest.exe test\afalgtest.exe test\asn1_decode_test.exe test\asn1_encode_test.exe test\asn1_internal_test.exe test\asn1_string_table_test.exe test\asn1_time_test.exe test\asynciotest.exe test\asynctest.exe test\bad_dtls_test.exe test\bftest.exe test\bio_callback_test.exe test\bio_enc_test.exe test\bio_memleak_test.exe test\bioprinttest.exe test\bntest.exe test\buildtest_c_aes.exe test\buildtest_c_asn1.exe test\buildtest_c_asn1t.exe test\buildtest_c_async.exe test\buildtest_c_bio.exe test\buildtest_c_blowfish.exe test\buildtest_c_bn.exe test\buildtest_c_buffer.exe test\buildtest_c_camellia.exe test\buildtest_c_cast.exe test\buildtest_c_cmac.exe test\buildtest_c_cms.exe test\buildtest_c_comp.exe test\buildtest_c_conf.exe test\buildtest_c_conf_api.exe test\buildtest_c_crypto.exe test\buildtest_c_ct.exe test\buildtest_c_des.exe test\buildtest_c_dh.exe test\buildtest_c_dsa.exe test\buildtest_c_dtls1.exe test\buildtest_c_e_os2.exe test\buildtest_c_ebcdic.exe test\buildtest_c_ec.exe test\buildtest_c_ecdh.exe test\buildtest_c_ecdsa.exe test\buildtest_c_engine.exe test\buildtest_c_evp.exe test\buildtest_c_hmac.exe test\buildtest_c_idea.exe test\buildtest_c_kdf.exe test\buildtest_c_lhash.exe test\buildtest_c_md4.exe test\buildtest_c_md5.exe test\buildtest_c_mdc2.exe test\buildtest_c_modes.exe test\buildtest_c_obj_mac.exe test\buildtest_c_objects.exe test\buildtest_c_ocsp.exe test\buildtest_c_opensslv.exe test\buildtest_c_ossl_typ.exe test\buildtest_c_pem.exe test\buildtest_c_pem2.exe test\buildtest_c_pkcs12.exe test\buildtest_c_pkcs7.exe test\buildtest_c_rand.exe test\buildtest_c_rand_drbg.exe test\buildtest_c_rc2.exe test\buildtest_c_rc4.exe test\buildtest_c_ripemd.exe test\buildtest_c_rsa.exe test\buildtest_c_safestack.exe test\buildtest_c_seed.exe test\buildtest_c_sha.exe test\buildtest_c_srp.exe test\buildtest_c_srtp.exe test\buildtest_c_ssl.exe test\buildtest_c_ssl2.exe test\buildtest_c_stack.exe test\buildtest_c_store.exe test\buildtest_c_symhacks.exe test\buildtest_c_tls1.exe test\buildtest_c_ts.exe test\buildtest_c_txt_db.exe test\buildtest_c_ui.exe test\buildtest_c_whrlpool.exe test\buildtest_c_x509.exe test\buildtest_c_x509_vfy.exe test\buildtest_c_x509v3.exe test\casttest.exe test\chacha_internal_test.exe test\cipher_overhead_test.exe test\cipherbytes_test.exe test\cipherlist_test.exe test\ciphername_test.exe test\clienthellotest.exe test\cmactest.exe test\cmsapitest.exe test\conf_include_test.exe test\constant_time_test.exe test\crltest.exe test\ct_test.exe test\ctype_internal_test.exe test\curve448_internal_test.exe test\d2i_test.exe test\danetest.exe test\destest.exe test\dhtest.exe test\drbg_cavs_test.exe test\drbgtest.exe test\dsa_no_digest_size_test.exe test\dsatest.exe test\dtls_mtu_test.exe test\dtlstest.exe test\dtlsv1listentest.exe test\ec_internal_test.exe test\ecdsatest.exe test\ecstresstest.exe test\ectest.exe test\enginetest.exe test\errtest.exe test\evp_extra_test.exe test\evp_test.exe test\exdatatest.exe test\exptest.exe test\fatalerrtest.exe test\gmdifftest.exe test\gosttest.exe test\hmactest.exe test\ideatest.exe test\igetest.exe test\lhash_test.exe test\md2test.exe test\mdc2_internal_test.exe test\mdc2test.exe test\memleaktest.exe test\modes_internal_test.exe test\ocspapitest.exe test\packettest.exe test\pbelutest.exe test\pemtest.exe test\pkey_meth_kdf_test.exe test\pkey_meth_test.exe test\poly1305_internal_test.exe test\rc2test.exe test\rc4test.exe test\rc5test.exe test\rdrand_sanitytest.exe test\recordlentest.exe test\rsa_complex.exe test\rsa_mp_test.exe test\rsa_test.exe test\sanitytest.exe test\secmemtest.exe test\servername_test.exe test\siphash_internal_test.exe test\sm2_internal_test.exe test\sm4_internal_test.exe test\srptest.exe test\ssl_cert_table_internal_test.exe test\ssl_ctx_test.exe test\ssl_test.exe test\ssl_test_ctx_test.exe test\sslapitest.exe test\sslbuffertest.exe test\sslcorrupttest.exe test\ssltest_old.exe test\stack_test.exe test\sysdefaulttest.exe test\test_test.exe test\threadstest.exe test\time_offset_test.exe test\tls13ccstest.exe test\tls13encryptiontest.exe test\uitest.exe test\v3ext.exe test\v3nametest.exe test\verify_extra_test.exe test\versions.exe test\wpackettest.exe test\x509_check_cert_pkey_test.exe test\x509_dup_cert_test.exe test\x509_internal_test.exe test\x509_time_test.exe test\x509aux.exe
-PROGRAMPDBS=apps\openssl.pdb fuzz\asn1-test.pdb fuzz\asn1parse-test.pdb fuzz\bignum-test.pdb fuzz\bndiv-test.pdb fuzz\client-test.pdb fuzz\cms-test.pdb fuzz\conf-test.pdb fuzz\crl-test.pdb fuzz\ct-test.pdb fuzz\server-test.pdb fuzz\x509-test.pdb test\aborttest.pdb test\afalgtest.pdb test\asn1_decode_test.pdb test\asn1_encode_test.pdb test\asn1_internal_test.pdb test\asn1_string_table_test.pdb test\asn1_time_test.pdb test\asynciotest.pdb test\asynctest.pdb test\bad_dtls_test.pdb test\bftest.pdb test\bio_callback_test.pdb test\bio_enc_test.pdb test\bio_memleak_test.pdb test\bioprinttest.pdb test\bntest.pdb test\buildtest_c_aes.pdb test\buildtest_c_asn1.pdb test\buildtest_c_asn1t.pdb test\buildtest_c_async.pdb test\buildtest_c_bio.pdb test\buildtest_c_blowfish.pdb test\buildtest_c_bn.pdb test\buildtest_c_buffer.pdb test\buildtest_c_camellia.pdb test\buildtest_c_cast.pdb test\buildtest_c_cmac.pdb test\buildtest_c_cms.pdb test\buildtest_c_comp.pdb test\buildtest_c_conf.pdb test\buildtest_c_conf_api.pdb test\buildtest_c_crypto.pdb test\buildtest_c_ct.pdb test\buildtest_c_des.pdb test\buildtest_c_dh.pdb test\buildtest_c_dsa.pdb test\buildtest_c_dtls1.pdb test\buildtest_c_e_os2.pdb test\buildtest_c_ebcdic.pdb test\buildtest_c_ec.pdb test\buildtest_c_ecdh.pdb test\buildtest_c_ecdsa.pdb test\buildtest_c_engine.pdb test\buildtest_c_evp.pdb test\buildtest_c_hmac.pdb test\buildtest_c_idea.pdb test\buildtest_c_kdf.pdb test\buildtest_c_lhash.pdb test\buildtest_c_md4.pdb test\buildtest_c_md5.pdb test\buildtest_c_mdc2.pdb test\buildtest_c_modes.pdb test\buildtest_c_obj_mac.pdb test\buildtest_c_objects.pdb test\buildtest_c_ocsp.pdb test\buildtest_c_opensslv.pdb test\buildtest_c_ossl_typ.pdb test\buildtest_c_pem.pdb test\buildtest_c_pem2.pdb test\buildtest_c_pkcs12.pdb test\buildtest_c_pkcs7.pdb test\buildtest_c_rand.pdb test\buildtest_c_rand_drbg.pdb test\buildtest_c_rc2.pdb test\buildtest_c_rc4.pdb test\buildtest_c_ripemd.pdb test\buildtest_c_rsa.pdb test\buildtest_c_safestack.pdb test\buildtest_c_seed.pdb test\buildtest_c_sha.pdb test\buildtest_c_srp.pdb test\buildtest_c_srtp.pdb test\buildtest_c_ssl.pdb test\buildtest_c_ssl2.pdb test\buildtest_c_stack.pdb test\buildtest_c_store.pdb test\buildtest_c_symhacks.pdb test\buildtest_c_tls1.pdb test\buildtest_c_ts.pdb test\buildtest_c_txt_db.pdb test\buildtest_c_ui.pdb test\buildtest_c_whrlpool.pdb test\buildtest_c_x509.pdb test\buildtest_c_x509_vfy.pdb test\buildtest_c_x509v3.pdb test\casttest.pdb test\chacha_internal_test.pdb test\cipher_overhead_test.pdb test\cipherbytes_test.pdb test\cipherlist_test.pdb test\ciphername_test.pdb test\clienthellotest.pdb test\cmactest.pdb test\cmsapitest.pdb test\conf_include_test.pdb test\constant_time_test.pdb test\crltest.pdb test\ct_test.pdb test\ctype_internal_test.pdb test\curve448_internal_test.pdb test\d2i_test.pdb test\danetest.pdb test\destest.pdb test\dhtest.pdb test\drbg_cavs_test.pdb test\drbgtest.pdb test\dsa_no_digest_size_test.pdb test\dsatest.pdb test\dtls_mtu_test.pdb test\dtlstest.pdb test\dtlsv1listentest.pdb test\ec_internal_test.pdb test\ecdsatest.pdb test\ecstresstest.pdb test\ectest.pdb test\enginetest.pdb test\errtest.pdb test\evp_extra_test.pdb test\evp_test.pdb test\exdatatest.pdb test\exptest.pdb test\fatalerrtest.pdb test\gmdifftest.pdb test\gosttest.pdb test\hmactest.pdb test\ideatest.pdb test\igetest.pdb test\lhash_test.pdb test\md2test.pdb test\mdc2_internal_test.pdb test\mdc2test.pdb test\memleaktest.pdb test\modes_internal_test.pdb test\ocspapitest.pdb test\packettest.pdb test\pbelutest.pdb test\pemtest.pdb test\pkey_meth_kdf_test.pdb test\pkey_meth_test.pdb test\poly1305_internal_test.pdb test\rc2test.pdb test\rc4test.pdb test\rc5test.pdb test\rdrand_sanitytest.pdb test\recordlentest.pdb test\rsa_complex.pdb test\rsa_mp_test.pdb test\rsa_test.pdb test\sanitytest.pdb test\secmemtest.pdb test\servername_test.pdb test\siphash_internal_test.pdb test\sm2_internal_test.pdb test\sm4_internal_test.pdb test\srptest.pdb test\ssl_cert_table_internal_test.pdb test\ssl_ctx_test.pdb test\ssl_test.pdb test\ssl_test_ctx_test.pdb test\sslapitest.pdb test\sslbuffertest.pdb test\sslcorrupttest.pdb test\ssltest_old.pdb test\stack_test.pdb test\sysdefaulttest.pdb test\test_test.pdb test\threadstest.pdb test\time_offset_test.pdb test\tls13ccstest.pdb test\tls13encryptiontest.pdb test\uitest.pdb test\v3ext.pdb test\v3nametest.pdb test\verify_extra_test.pdb test\versions.pdb test\wpackettest.pdb test\x509_check_cert_pkey_test.pdb test\x509_dup_cert_test.pdb test\x509_internal_test.pdb test\x509_time_test.pdb test\x509aux.pdb
-SCRIPTS=apps\CA.pl apps\tsget.pl
-
+LIBS=libcrypto.lib libssl.lib
 GENERATED_MANDATORY=include\crypto\bn_conf.h include\crypto\dso_conf.h include\openssl\opensslconf.h
 GENERATED=crypto\buildinf.h
-
-INSTALL_LIBS="libcrypto.lib" "libssl.lib"
-INSTALL_SHLIBS=
-INSTALL_SHLIBPDBS=
-
-MISC_SCRIPTS="$(BLDDIR)\apps\CA.pl" "$(BLDDIR)\apps\tsget.pl"
-
-
-APPS_OPENSSL="apps\openssl"
-
-# Do not edit these manually. Use Configure with --prefix or --openssldir
-# to change this!  Short explanation in the top comment in Configure
-INSTALLTOP_dev=C:
-INSTALLTOP_dir=\Program Files\OpenSSL
-OPENSSLDIR_dev=C:
-OPENSSLDIR_dir=\Program Files\Common Files\SSL
-LIBDIR=lib
-ENGINESDIR_dev=C:
-ENGINESDIR_dir=\Program Files\OpenSSL\lib\engines-1_1
-!IF "$(DESTDIR)" != ""
-INSTALLTOP=$(DESTDIR)$(INSTALLTOP_dir)
-OPENSSLDIR=$(DESTDIR)$(OPENSSLDIR_dir)
-ENGINESDIR=$(DESTDIR)$(ENGINESDIR_dir)
-!ELSE
-INSTALLTOP=$(INSTALLTOP_dev)$(INSTALLTOP_dir)
-OPENSSLDIR=$(OPENSSLDIR_dev)$(OPENSSLDIR_dir)
-ENGINESDIR=$(ENGINESDIR_dev)$(ENGINESDIR_dir)
-!ENDIF
-
-# $(libdir) is chosen to be compatible with the GNU coding standards
-libdir=$(INSTALLTOP)\$(LIBDIR)
 
 ##### User defined commands and flags ################################
 
 CC=cl
 CPP=$(CC) /EP /C
-CPPFLAGS=
 CFLAGS=/W3 /wd4090 /nologo /O2
-LD=link
-LDFLAGS=/nologo /debug
-EX_LIBS=
 
 PERL=C:\Strawberry\perl\bin\perl.exe
 
 AR=lib
 ARFLAGS= /nologo
-
-MT=mt
-MTFLAGS= -nologo
-
-
-
 
 ##### Special command flags ##########################################
 
@@ -92,12 +43,8 @@ AROUTFLAG=/out:$(OSSL_EMPTY)
 
 # Variables starting with CNF_ are common variables for all product types
 
-CNF_ASFLAGS=/c /Cp /Cx
 CNF_CPPFLAGS=-D"OPENSSL_SYS_WIN32" -D"WIN32_LEAN_AND_MEAN" -D"UNICODE" -D"_UNICODE" -D"_CRT_SECURE_NO_DEPRECATE" -D"_WINSOCK_DEPRECATED_NO_WARNINGS" -D"NDEBUG"
 CNF_CFLAGS=/Gs0 /GF /Gy
-CNF_CXXFLAGS=
-CNF_LDFLAGS=
-CNF_EX_LIBS=ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
 
 # Variables starting with LIB_ are used to build library object files
 # and shared libraries.
@@ -105,71 +52,17 @@ CNF_EX_LIBS=ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
 # Variables starting with BIN_ are used to build programs and their object
 # files.
 
-LIB_ASFLAGS=$(CNF_ASFLAGS) $(ASFLAGS)
-LIB_CPPFLAGS=-D"L_ENDIAN" -D"OPENSSL_PIC" -D"OPENSSLDIR=\"C:\\Program Files\\Common Files\\SSL\"" -D"ENGINESDIR=\"C:\\Program Files\\OpenSSL\\lib\\engines-1_1\"" $(CNF_CPPFLAGS) $(CPPFLAGS)
+LIB_CPPFLAGS=-D"L_ENDIAN" -D"OPENSSL_PIC" -D"OPENSSLDIR=\"C:\\Program Files\\Common Files\\SSL\"" -D"ENGINESDIR=\"C:\\Program Files\\OpenSSL\\lib\\engines-1_1\"" $(CNF_CPPFLAGS)
 LIB_CFLAGS=/Zi /Fdossl_static.pdb /MT /Zl $(CNF_CFLAGS) $(CFLAGS)
-LIB_LDFLAGS=/dll $(CNF_LDFLAGS) $(LDFLAGS)
-LIB_EX_LIBS=$(CNF_EX_LIBS) $(EX_LIBS)
-DSO_ASFLAGS=$(CNF_ASFLAGS) $(ASFLAGS)
-DSO_CPPFLAGS=$(CNF_CPPFLAGS) $(CPPFLAGS)
-DSO_CFLAGS=/Zi /Fddso.pdb $(CNF_CFLAGS) $(CFLAGS)
-DSO_LDFLAGS=/dll $(CNF_LDFLAGS) $(LDFLAGS)
-DSO_EX_LIBS=$(CNF_EX_LIBS) $(EX_LIBS)
-BIN_ASFLAGS=$(CNF_ASFLAGS) $(ASFLAGS)
-BIN_CPPFLAGS=$(CNF_CPPFLAGS) $(CPPFLAGS)
-BIN_CFLAGS=/Zi /Fdapp.pdb /MT $(CNF_CFLAGS) $(CFLAGS)
-BIN_LDFLAGS=/subsystem:console /opt:ref $(CNF_LDFLAGS) $(LDFLAGS)
-BIN_EX_LIBS=$(CNF_EX_LIBS) $(EX_LIBS)
 
 # CPPFLAGS_Q is used for one thing only: to build up buildinf.h
 CPPFLAGS_Q=-D"L_ENDIAN" -D"OPENSSL_PIC"
 
-PERLASM_SCHEME= auto
-
-PROCESSOR= 
-
 # The main targets ###################################################
 
-all: build_generated
-	$(MAKE) /$(MAKEFLAGS) depend && $(MAKE) /$(MAKEFLAGS) _all
-_all: build_libs_nodep build_engines_nodep build_programs_nodep
-build_libs: build_generated
-	$(MAKE) /$(MAKEFLAGS) depend && $(MAKE) /$(MAKEFLAGS) _build_libs
-_build_libs: build_libs_nodep
-build_engines: build_generated
-	$(MAKE) /$(MAKEFLAGS) depend && $(MAKE) /$(MAKEFLAGS) _build_engines
-_build_engines: build_engines_nodep
-build_programs: build_generated
-	$(MAKE) /$(MAKEFLAGS) depend && $(MAKE) /$(MAKEFLAGS) _build_programs
-_build_programs: build_programs_nodep
-
-build_generated: $(GENERATED_MANDATORY)
-build_libs_nodep: $(LIBS) 
-build_engines_nodep: $(ENGINES)
-build_programs_nodep: $(PROGRAMS) $(SCRIPTS)
-
-# Kept around for backward compatibility
-build_apps build_tests: build_programs
-
-# Convenience target to prebuild all generated files, not just the mandatory
-# ones
-build_all_generated: $(GENERATED_MANDATORY) $(GENERATED)
-	@@rem
-	@$(ECHO) "Warning: consider configuring with no-makedepend, because if"
-	@$(ECHO) "         target system doesn't have $(PERL),"
-	@$(ECHO) "         then make will fail..."
-	@@rem
-
-
-install: install_dev install_ssldirs 
-
-libclean:
-	"$(PERL)" -e "map { m/(.*)\.dll$$/; unlink glob """{.,apps,test,fuzz}/$$1.*"""; } @ARGV" $(SHLIBS)
-	-del /Q /F $(LIBS) libcrypto.* libssl.* ossl_static.pdb
+all: $(GENERATED_MANDATORY) $(GENERATED) $(LIBS)
 
 clean: libclean
-	-del /Q /F $(ENGINES)
-	-del /Q /F $(SCRIPTS)
 	-del /Q /F $(GENERATED_MANDATORY)
 	-del /Q /F $(GENERATED)
 	-del /Q /S /F *.d *.obj *.pdb *.ilk *.manifest
@@ -179,77 +72,7 @@ distclean: clean
 	-del /Q /F configdata.pm
 	-del /Q /F makefile
 
-depend:
-	@ @rem
-	@ "$(PERL)" "$(SRCDIR)\util\add-depends.pl" "VC"
-	@ @rem
-
-# Install helper targets #############################################
-
-
-install_ssldirs:
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(OPENSSLDIR)\certs"
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(OPENSSLDIR)\private"
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(OPENSSLDIR)\misc"
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "$(SRCDIR)\apps\openssl.cnf" \
-                                        "$(OPENSSLDIR)\openssl.cnf.dist"
-	@IF NOT EXIST "$(OPENSSLDIR)\openssl.cnf" \
-         "$(PERL)" "$(SRCDIR)\util\copy.pl" "$(SRCDIR)\apps\openssl.cnf" \
-                                        "$(OPENSSLDIR)\openssl.cnf"
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" $(MISC_SCRIPTS) \
-                                        "$(OPENSSLDIR)\misc"
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "$(SRCDIR)\apps\ct_log_list.cnf" \
-                                        "$(OPENSSLDIR)\ct_log_list.cnf.dist"
-	@IF NOT EXIST "$(OPENSSLDIR)\ct_log_list.cnf" \
-         "$(PERL)" "$(SRCDIR)\util\copy.pl" "$(SRCDIR)\apps\ct_log_list.cnf" \
-                                        "$(OPENSSLDIR)\ct_log_list.cnf"
-
-install_dev: install_runtime_libs
-	@if "$(INSTALLTOP)"=="" ( $(ECHO) "INSTALLTOP should not be empty" & exit 1 )
-	@$(ECHO) "*** Installing development files"
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(INSTALLTOP)\include\openssl"
-	@@rem
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "-exclude_re=/__DECC_" \
-				       "$(SRCDIR)\include\openssl\*.h" \
-				       "$(INSTALLTOP)\include\openssl"
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "$(BLDDIR)\include\openssl\*.h" \
-				       "$(INSTALLTOP)\include\openssl"
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(libdir)"
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" $(INSTALL_LIBS) "$(libdir)"
-	@if "$(SHLIBS)"=="" \
-	 "$(PERL)" "$(SRCDIR)\util\copy.pl" ossl_static.pdb "$(libdir)"
-
-
-install_runtime_libs: build_libs
-	@if "$(INSTALLTOP)"=="" ( $(ECHO) "INSTALLTOP should not be empty" & exit 1 )
-	@$(ECHO) "*** Installing runtime libraries"
-	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(INSTALLTOP)\bin"
-	@if not "$(SHLIBS)"=="" \
-	 "$(PERL)" "$(SRCDIR)\util\copy.pl" $(INSTALL_SHLIBS) "$(INSTALLTOP)\bin"
-	@if not "$(SHLIBS)"=="" \
-	 "$(PERL)" "$(SRCDIR)\util\copy.pl" $(INSTALL_SHLIBPDBS) \
-                                        "$(INSTALLTOP)\bin"
-
-
-
-
-
-
 # Building targets ###################################################
-
-configdata.pm: "$(SRCDIR)\Configure" "Configurations\common0.tmpl" "Configurations\windows-makefile.tmpl" "Configurations\common.tmpl" "build.info" "crypto\build.info" "ssl\build.info" "engines\build.info" "apps\build.info" "test\build.info" "util\build.info" "tools\build.info" "fuzz\build.info" "crypto\objects\build.info" "crypto\md4\build.info" "crypto\md5\build.info" "crypto\sha\build.info" "crypto\mdc2\build.info" "crypto\hmac\build.info" "crypto\ripemd\build.info" "crypto\whrlpool\build.info" "crypto\poly1305\build.info" "crypto\blake2\build.info" "crypto\siphash\build.info" "crypto\sm3\build.info" "crypto\des\build.info" "crypto\aes\build.info" "crypto\rc2\build.info" "crypto\rc4\build.info" "crypto\idea\build.info" "crypto\aria\build.info" "crypto\bf\build.info" "crypto\cast\build.info" "crypto\camellia\build.info" "crypto\seed\build.info" "crypto\sm4\build.info" "crypto\chacha\build.info" "crypto\modes\build.info" "crypto\bn\build.info" "crypto\ec\build.info" "crypto\rsa\build.info" "crypto\dsa\build.info" "crypto\dh\build.info" "crypto\sm2\build.info" "crypto\dso\build.info" "crypto\engine\build.info" "crypto\buffer\build.info" "crypto\bio\build.info" "crypto\stack\build.info" "crypto\lhash\build.info" "crypto\rand\build.info" "crypto\err\build.info" "crypto\evp\build.info" "crypto\asn1\build.info" "crypto\pem\build.info" "crypto\x509\build.info" "crypto\x509v3\build.info" "crypto\conf\build.info" "crypto\txt_db\build.info" "crypto\pkcs7\build.info" "crypto\pkcs12\build.info" "crypto\comp\build.info" "crypto\ocsp\build.info" "crypto\ui\build.info" "crypto\cms\build.info" "crypto\ts\build.info" "crypto\srp\build.info" "crypto\cmac\build.info" "crypto\ct\build.info" "crypto\async\build.info" "crypto\kdf\build.info" "crypto\store\build.info" "test\ossl_shim\build.info" "Configurations\00-base-templates.conf" "Configurations\10-main.conf"
-	@$(ECHO) "Detected changed: $?"
-	"$(PERL)" configdata.pm -r
-	@$(ECHO) "**************************************************"
-	@$(ECHO) "***                                            ***"
-	@$(ECHO) "***   Please run the same make command again   ***"
-	@$(ECHO) "***                                            ***"
-	@$(ECHO) "**************************************************"
-	@exit 1
-
-reconfigure reconf:
-	"$(PERL)" configdata.pm -r
-
 
 include\crypto\bn_conf.h: "include\crypto\bn_conf.h.in" "configdata.pm"
 	"$(PERL)" "-I$(BLDDIR)" -Mconfigdata "util\dofile.pl" \
