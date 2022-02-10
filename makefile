@@ -1,7 +1,7 @@
 ROOT := openssl-1.1.1m
 
 DIRS = \
-fuzz\
+engines\
 ssl\
 crypto\
 external\
